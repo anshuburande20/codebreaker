@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>codebreaker| Empowering Street Food Vendors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-primary {
+            background-color: #16a34a;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #15803d;
+            transform: translateY(-2px);
+        }
+        
+        .section-title {
+            color: #166534;
+        }
+        
+        .vendor-section-title {
+            color: #1e40af;
+        }
+        
+        .check-btn {
+            color: #1e40af;
+            font-weight: bold;
+            transition: all 0.2s ease;
+        }
+        
+        .check-btn:hover {
+            color: #1e3a8a;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-4 md:px-10 shadow-md sticky top-0 bg-white z-50">
+        <div class="text-2xl font-bold text-green-600">RasoiLink</div>
+        <ul class="hidden md:flex gap-8 font-medium">
+            <li><a href="#features" class="hover:text-green-600">Features</a></li>
+            <li><a href="#vendors" class="hover:text-green-600">For Vendors</a></li>
+            <li><a href="#partners" class="hover:text-green-600">Partners</a></li>
+            <li><a href="#contact" class="hover:text-green-600">Contact</a></li>
+        </ul>
+        <button class="btn-primary text-white px-4 py-2 rounded-md">Get Started</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center px-6 md:px-20 py-16 bg-gradient-to-r from-green-100 to-white">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-green-700 mb-6">Revolutionizing Street Food Sourcing</h1>
+        <p class="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
+            Helping street food vendors access affordable and quality raw materials — vegetables, spices, containers, and more — directly from trusted local suppliers.
+        </p>
+        <div class="mt-10">
+            <a href="chat.html" class="btn-primary text-white px-6 py-3 rounded-lg text-lg shadow-md inline-block">Chat Here</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="px-6 md:px-20 py-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title">What We Offer</h2>
+        <div class="grid md:grid-cols-3 gap-10 text-center">
+            <div class="feature-card p-6 shadow-lg rounded-xl">
+                <img src="https://cdn-icons-png.flaticon.com/512/2909/2909829.png" alt="Supplier icon" class="w-16 mx-auto mb-4" />
+                <h3 class="text-xl font-semibold mb-2">Direct Supplier Access</h3>
+                <p class="text-gray-600">Vendors can connect with verified local suppliers for vegetables, spices, packaging, and more.</p>
+            </div>
+            <div class="feature-card p-6 shadow-lg rounded-xl">
+                <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="Price comparison icon" class="w-16 mx-auto mb-4" />
+                <h3 class="text-xl font-semibold mb-2">Price Comparison</h3>
+                <p class="text-gray-600">Compare real-time prices and save up to 30% on essential raw materials.</p>
+            </div>
+            <div class="feature-card p-6 shadow-lg rounded-xl">
+                <img src="https://cdn-icons-png.flaticon.com/512/3121/3121515.png" alt="Delivery icon" class="w-16 mx-auto mb-4" />
+                <h3 class="text-xl font-semibold mb-2">Doorstep Delivery</h3>
+                <p class="text-gray-600">Get raw materials delivered quickly and reliably, even in small quantities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vendor Sections -->
+    <section id="vendors" class="px-6 md:px-20 py-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title">For Vendors</h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="feature-card p-6 shadow-lg rounded-xl">
+                <h3 class="text-xl font-semibold mb-2 vendor-section-title">Affordable Vegetables & Fruits</h3>
+                <p class="text-gray-600 mb-4">Vendors can connect with local suppliers for Vegetables and Fruits.</p>
+                <a href="V&F.html" class="check-btn">Check here →</a>
+            </div>
+            
+            <div class="feature-card p-6 shadow-lg rounded-xl">
+                <h3 class="text-xl font-semibold mb-2 vendor-section-title">Affordable Groceries</h3>
+                <p class="text-gray-600 mb-4">Vendors can connect with local suppliers for Groceries.</p>
+                <a href="groceries.html" class="check-btn">Check here →</a>
+            </div>
+            
+            <div class="feature-card p-6 shadow-lg rounded-xl">
+                <h3 class="text-xl font-semibold mb-2 vendor-section-title">Affordable Items</h3>
+                <p class="text-gray-600 mb-4">Vendors can connect with local suppliers for Items.</p>
+                <a href="item.html" class="check-btn">Check here →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vendor Impact Section -->
+    <section id="vendor-impact" class="bg-green-50 px-6 md:px-20 py-16">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-green-700">Built For Local Heroes</h2>
+            <p class="text-gray-700 text-lg mb-6">
+                Our mission is to uplift street food vendors by removing sourcing barriers and improving their daily operations.
+            </p>
+            <img src="https://images.unsplash.com/photo-1576765607924-516993102b8c?auto=format&fit=crop&w=800&q=80" alt="Street food vendor preparing food" class="rounded-xl shadow-lg mx-auto mt-6 w-full max-w-2xl" />
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="px-6 md:px-20 py-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 section-title">Partnered With</h2>
+        <div class="flex flex-wrap justify-center items-center gap-10">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Nafed_logo.png/480px-Nafed_logo.png" alt="NAFED logo" class="h-16" />
+            <img src="https://1000logos.net/wp-content/uploads/2021/05/Foodpanda-logo.png" alt="Foodpanda logo" class="h-14" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bigbasket_Logo.png/640px-Bigbasket_Logo.png" alt="BigBasket logo" class="h-16" />
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-100 px-6 md:px-20 py-16">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+            <p class="text-gray-600 mb-6">Interested in partnering with us or helping local vendors? Drop us a message.</p>
+            <form class="grid gap-4 md:grid-cols-2">
+                <input type="text" placeholder="Your Name" class="p-3 rounded-md border border-gray-300" />
+                <input type="email" placeholder="Your Email" class="p-3 rounded-md border border-gray-300" />
+                <textarea placeholder="Message" class="p-3 rounded-md border border-gray-300 md:col-span-2"></textarea>
+                <button class="btn-primary text-white py-3 rounded-md md:col-span-2">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-sm text-gray-500 border-t">
+        &copy; 2025 codebreaker. Made with ❤ for Street Vendors.
+    </footer>
+</body>
+</html>
